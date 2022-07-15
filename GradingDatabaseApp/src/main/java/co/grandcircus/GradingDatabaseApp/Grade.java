@@ -3,7 +3,7 @@ package co.grandcircus.GradingDatabaseApp;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document("grade")
+@Document("grades")
 public class Grade {
 	
 	@Id
@@ -45,12 +45,11 @@ public class Grade {
 		this.total = total;
 	}
 	
-	public Grade(){
-		
+	public Grade() {
+		this.id = id;
 	}
 	
 	public Grade(String id, String name, String type, double score, double total) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.type = type;

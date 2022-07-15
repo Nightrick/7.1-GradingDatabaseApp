@@ -1,0 +1,17 @@
+@charset "ISO-8859-1";
+
+body{
+	background-color: wheat;
+}
+
+.table{
+	text-align: center;
+}
+
+.table, tr, th, td {
+  border: 1px solid;
+  text-align: center;
+  width: 30%;
+  table-layout: fixed;
+}
+
